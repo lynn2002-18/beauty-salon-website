@@ -13,22 +13,25 @@ Target users include potential clients browsing facial treatments, new visitors 
 ---
  🧠 Key Features
 
-- 🖼️ Homepage with Carousel**  
+- 🖼️ Homepage with Carousel
   Beautiful scrolling banners and store environment photos to build trust and attraction.
 
-- 💆 Facial Treatment Section**  
+- 💆 Facial Treatment Section 
   Categorized treatment cards with single-session and package pricing.
-
-- 🛍️ Brand Story Section**  
+  
+- 💡 Click-to-Jump Button Navigation
+  Buttons throughout the site enable smooth scrolling or direct jumping to corresponding sections (e.g., “Get Pricing” scrolls directly to the treatment section).
+  
+- 🛍️ Brand Story Section
   Emotionally engaging brand introduction with clean typography and layout.
 
-- 📱 Responsive Design**  
+- 📱 Responsive Design
   Optimized for both desktop and mobile devices.
 
-- 🧭 Navigation & Interactivity**  
+- 🧭 Navigation & Interactivity
   Smooth anchor navigation, animated button effects, and a “Find Your Treatment” interactive quiz (inspired by LaserAway’s UX).
 
-- 🧩 Scalable Project Structure**  
+- 🧩 Scalable Project Structure
   Clear separation of HTML, CSS, JavaScript, and assets for easy maintenance and future backend integration.
 
 ---
