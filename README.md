@@ -1,2 +1,2 @@
 # beauty-salon-website
-A frontend web project for a beauty salon site
+A commercial website for a beauty salon focusing on environment, facial services, brand storytelling, and interactive design.
