@@ -1,0 +1,118 @@
+{
+  "categories": [
+    {
+      "name": "Acne",
+      "treatments": [
+        {
+          "title": "Deep Pore Cleansing",
+          "id": "deep-pore-cleansing",
+          "duration": "75 min",
+          "price": "$108 / 1 time",
+          "package": "$500 / 5 times",
+          "media": "images/deep-pore-cleansing.jpg",
+          "description": "A deep-cleansing facial designed to detoxify and decongest clogged pores. Includes thorough extractions and a purifying treatment mask."
+        },
+        {
+          "title": "Acne Treatment",
+          "id": "acne-treatment",
+          "duration": "80 min",
+          "price": "$148 / 1 time",
+          "package": "$700 / 5 times",
+          "media": "images/acne-treatment.jpg",
+          "description": "Tailored for acne-prone skin, this treatment calms inflammation, reduces breakouts, and helps prevent future acne flare-ups."
+        }
+      ]
+    },
+    {
+  "name": "Hydration",
+  "treatments": [
+    {
+      "id": "basic-hydrating",
+      "title": "Basic Hydrating Treatment",
+      "duration": "80 minutes",
+      "price": "$118 / session",
+      "package": "$550 / 5 sessions",
+      "media": "images/basic-hydrating.jpg",
+      "description": "Infuses the skin with moisture, improving elasticity and radiance. Suitable for dry, normal, and combination skin types."
+    },
+    {
+      "id": "advanced-hydrating",
+      "title": "Advanced Hydrating Treatment",
+      "duration": "80 minutes",
+      "price": "$148 / session",
+      "package": "$700 / 5 sessions",
+      "media": "images/advanced-hydrating.jpg",
+      "description": "Delivers intensive hydration and deep nourishment, ideal for dry or unbalanced skin. Suitable for dry, normal, and combination skin types."
+    }
+  ]
+},
+    {
+      "name": "Combo Treatment",
+      "treatments": [
+        {
+          "title": "Combo Treatment",
+          "id": "combo-treatment",
+          "duration": "90 min",
+          "price": "$178 / 1 time",
+          "package": "$850 / 5 times",
+          "media": "images/combo-treatment.jpg",
+          "description": "A comprehensive treatment that combines deep cleansing and intensive hydration, customized to meet your unique skin needs."
+        }
+      ]
+    },
+    {
+      "name": "Anti-Aging",
+      "treatments": [
+        {
+          "title": "Anti-Aging Treat",
+          "id": "anti-aging",
+          "duration": "90 min",
+          "price": "$208 / 1 time",
+          "package": "$980 / 5 times",
+          "media": "images/anti-aging.jpg",
+          "description": "A rejuvenating facial that enhances skin elasticity, smooths fine lines, brightens dull complexion, and slows visible signs of aging."
+        }
+      ]
+    },
+    {
+      "name": "Optional Add-on Treatments",
+      "treatments": [
+        {
+          "title": "Basic Eye Treatment",
+          "id": "basic-eye",
+          "price": "$40 / 1 time",
+          "package": "$175 / 5 times",
+          "media": "images/basic-eye.jpg",
+          "description": "Reduces puffiness and brightens the under-eye area for a refreshed, youthful appearance."
+        },
+        {
+          "title": "Advanced Eye Treat",
+          "id": "advanced-eye",
+          "price": "$60 / 1 time",
+          "package": "$250 / 5 times",
+          "description": "Targets fine lines, dark circles, and puffiness using advanced formulas for visible lifting and firming around the eyes."
+        },
+        {
+          "title": "Basic Neck Treat",
+          "id": "basic-neck",
+          "price": "$40 / 1 time",
+          "package": "$175 / 5 times",
+          "media": "images/basic-neck.jpg",
+          "description": "Hydrates and smooths the neck area to improve skin texture and tone."
+        },
+        {
+          "title": "Advanced Neck Treat",
+          "id": "advanced-neck",
+          "price": "$60 / 1 time",
+          "package": "$250 / 5 times",
+          "description": "Delivers intensive firming and lifting to reduce crepiness and improve neck contour."
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+

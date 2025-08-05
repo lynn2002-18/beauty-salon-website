@@ -1,0 +1,718 @@
+/* 通用样式 */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  color: #333;
+
+
+}
+
+/* 顶部黑色横条 */
+.top-bar {
+  background-color: #222;
+  color: white;
+  padding:15px 30px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  font-size: 14px;
+}
+.top-bar i {
+  color: white;
+  margin-right: 6px;
+}
+
+
+.top-bar a {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.top-bar a:hover {
+  text-decoration: underline;
+}
+/* 外层白色背景，占满屏幕 */
+.header-wrapper {
+  background-color: white;
+  width: 100%;
+  box-shadow: none;
+}
+
+
+/* Logo和导航栏 */
+.main-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+}
+
+.logo {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #222;
+
+
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;  /* 横向排列 */
+  gap: 68px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+/* about us + find.. */
+.nav-links a {
+  font-weight: 600;
+  font-size: 16px;
+  font-family:'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  color: #222;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  text-decoration: none !important; 
+}
+
+/* hover 效果 */
+.nav-links a:hover,
+.dropbtn:hover {
+  background-color: rgba(255, 105, 180, 0.08);
+  color: #e91e63;
+}
+
+
+
+/* 下拉容器 */
+.dropdown {
+  position: relative;
+}
+
+/* 下拉内容隐藏状态 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  z-index: 999;
+  padding: 10px 0;
+}
+
+
+/* 下拉项样式 */
+.dropdown-content a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f9f9f9;
+  color: #e91e63;
+}
+
+/* 展开时箭头向上 */
+.dropdown.open .arrow {
+  transform: rotate(-135deg);
+}
+
+/* 默认隐藏菜单 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  z-index: 100;
+  padding: 12px 0;
+}
+
+/* 展开时显示菜单 */
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+
+/* 主体内容：左右结构 */
+.main-content {
+  display: flex;
+  min-height: 600px; /* 或任意你希望的高度 */
+  align-items: flex-start; /* 从顶部对齐 */
+  padding-top: 40px; /* 可调整数字往下或往上 */
+  margin-top: 0;
+  padding-top: 0;
+
+}
+
+/* 左侧图片 + 文字 */
+.promo-left {
+  flex: 1;
+  /*overflow: hidden;*/
+  display: flex;
+  margin-top: 0;
+  padding-top: 0;
+
+ 
+
+}
+
+.promo-left img {
+  width: 150%;
+  height:100%;
+  object-fit: cover;
+  display: block;
+  margin-top: 0;
+  padding-top: 0;
+
+}
+
+
+/* 表单区域整体美化 */
+.form-right {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 70px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.step-title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px; /* ✅ 原来可能是10px或12px，减小到6px */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+h2 {
+  font-size: 21px;
+  color: #222;
+  margin-bottom: 30px; /* ✅ 这个控制 subtitle 和 option-grid 之间的间距 */
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-weight: 600;
+
+}
+.option-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+/* 卡片样式优化 */
+.option-card {
+  width: 130px;
+  height: 150px;
+  background-color: #fff6f8;
+  border-radius: 18px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(247, 92, 162, 0.2);
+}
+
+/* 图标大小微调 */
+.option-card img {
+  width: 55px;
+  height: 42px;
+  margin-bottom: 10px;
+}
+
+/* 被选中状态 */
+.option-card.selected {
+  border: 2px solid #f75ca2;
+  color: #f75ca2;
+  box-shadow: 0 0 12px rgba(247, 92, 162, 0.3);
+  background-color: #ffeef5;
+}
+
+/* 下一步按钮 - 默认状态（禁用） */
+.next-button {
+  width: 240px;             /* 控制宽度，不要占满整行 */
+  background-color: #f9dfe6;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 16px 0;
+  border-radius: 50px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: not-allowed;
+  transition: all 0.3s ease;
+  letter-spacing: 0.6px;
+  opacity: 0.7;
+  align-self: center; /* 居中 */
+}
+
+/* 启用状态（选中后） */
+.next-button.enabled {
+  background-color: #f75ca2;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.next-button.enabled:hover {
+  background-color: #f65c9f;
+  box-shadow: 0 0 12px rgba(247, 92, 162, 0.3);
+}
+
+
+
+
+/* Services 下拉菜单整体容器 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* 下拉按钮样式 */
+.dropbtn {
+  font-weight: 600;
+  font-size: 16px;
+  font-family:'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  color: #222;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* 鼠标悬停时字体变淡粉色 */
+.dropbtn:hover {
+  color: #ff80aa;
+}
+
+/* 展开时字体变为粉色 */
+.dropdown.open .dropbtn {
+  color: #ff80aa;
+}
+
+/* 箭头样式：默认向下 */
+.arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); /* 向下箭头 */
+  transition: transform 0.2s ease;
+  vertical-align: middle;
+  position: relative;
+  top: 0.25px; /* 👈 向上微调 ，让底部对齐 */
+  margin-left: 4px;         /* 与文字之间留间隔 */
+
+}
+
+/* 展开状态下箭头朝上 */
+.dropdown.open .arrow {
+  transform: rotate(-135deg); /* 向上箭头 */
+}
+
+/* 下拉菜单样式 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px 0;
+}
+
+/* 菜单展开时显示 */
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+  color: #111;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s;
+}
+
+/* 鼠标悬停效果 */
+.dropdown-content a:hover {
+  background-color: #f8f8f8;
+}
+    .service-card {
+      display: none;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      border-radius: 12px;
+      background-color: #fff;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    }
+    .service-card.active {
+      display: block;
+    }
+    .service-card h3 {
+      color: #333;
+      margin-top: 0;
+    }
+    .price-highlight {
+      font-weight: bold;
+      color: #be3455;
+    }
+    .best-value {
+      color: #888;
+      font-style: italic;
+    }
+ 
+    
+/* 服务卡片改成上下结构，带图 */
+.service-card {
+  display: none;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  margin: 40px auto;
+  max-width: 720px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-direction: column;
+}
+.service-card.active {
+  display: flex;
+  flex-direction: column;
+}
+.service-card img.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+.card-content {
+  padding: 32px 36px;
+}
+.service-card h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+.service-card p {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #555;
+  font-size: 16px;
+}
+.price-highlight {
+  color: #b48a78;
+  font-weight: bold;
+  font-size: 18px;
+}
+.best-value {
+  background-color: #f9f3ef;
+  color: #c56c39;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 15px;
+}
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.card-content {
+  text-align: left;
+}
+
+.yelp-trust-section {
+  padding: 80px 60px;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  border-bottom: 1px solid #f8e8f3; /* 柔和过渡线 */
+  margin-bottom: 0;
+  padding-bottom: 40px;
+
+}
+
+.trust-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.trust-title .stars {
+  color: #ff4d4d;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.trust-title a {
+  color: #d32323;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.trust-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.trust-image {
+  flex: 1;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.trust-image img {
+  width: 200%;
+  height: 200%;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.trust-image img:hover {
+  transform: scale(1.02);
+}
+
+.choose-section {
+  max-width: 1000px;
+  margin: 80px auto 60px auto;
+  padding: 40px;
+  border-radius: 16px;
+  
+}
+
+
+.choose-section ul {
+  list-style: none;
+  font-family:  'Inter', sans-serif;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 18px;
+  color: #333;
+}
+
+.choose-section li {
+  display: flex;
+  font-family:  'Inter', sans-serif;
+  align-items: center;
+  gap: 10px;
+}
+
+.story-header {
+  width: 100%;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+.story-image {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 0.92;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+
+.about-us-section {
+  background: linear-gradient(to bottom, #fcf7fb, #fffefe);
+  padding: 100px 20px 120px;
+}
+
+.about-us-container {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 64px 48px;
+  border-radius: 24px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.about-us-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #6e2ca8;
+  margin-bottom: 56px;
+  letter-spacing: 0.5px;
+}
+
+.about-us-content p {
+  font-size: 1.15rem;
+  line-height: 2.1;
+  color: #444;
+  margin-bottom: 36px;
+  letter-spacing: 0.2px;
+}
+
+.about-us-content .last-line {
+  font-style: italic;
+  text-align: center;
+  color: #6e2ca8;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 40px 24px;
+  }
+  .about-us-title {
+    font-size: 1.8rem;
+  }
+  .about-us-content p {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+}
+
+/*find treatment style 
+  
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: white;
+      color: #333;
+    }
+
+    .quiz-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .quiz-section h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .option-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+    }
+
+    .option-card {
+      width: 120px;
+      height: 140px;
+      background-color: #f9f3f4;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .option-card img {
+      width: 59px;
+      height: 40px;
+      margin-bottom: 8px;
+    }
+
+    .option-card.selected {
+      border: 2px solid #f75ca2;
+      color: #f75ca2;
+      box-shadow: 0 0 10px rgba(247, 92, 162, 0.3);
+
+    }
+
+    .next-button {
+     background-color: #f9dfe6; /* 默认淡粉色（不可点击） 
+     color: white;
+     font-weight: bold;
+     border: none;
+     padding: 18px 142px;
+     border-radius: 50px;
+     font-size: 16px;
+     cursor: not-allowed;
+     transition: background-color 0.3s ease, cursor 0.3s ease;
+
+    }
+
+    .next-button.enabled {
+        background-color: #f75ca2; /* 高亮深粉色 
+        cursor: pointer;
+
+    }
+  */

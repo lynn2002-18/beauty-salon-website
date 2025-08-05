@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beauty Key Inc</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <!-- 引入 Font Awesome 图标 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- 添加 Google 字体链接 -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- 顶部黑色横条 -->
+  <div class="top-bar">
+    <a href="tel:+14156294478"><i class="fa fa-phone"></i> (415)629-4478</a>
+    <a href="https://www.google.com/maps/place/Beauty+Key+Skin+Care/@37.7245406,-122.4581663,15z/data=!4m6!3m5!1s0x808f7d5106cf3f37:0xc693f5b971a94b2d!8m2!3d37.7245203!4d-122.4579506!16s%2Fg%2F11h79nzj1x?entry=ttu" target="_blank">
+    <i class="fa fa-map-marker"></i>FIND A LOCATION</a>
+</div>
+
+  <!-- Logo + 导航栏 -->
+<header class="header-wrapper">
+  <div class="main-header">
+    <div class="logo">Beauty Key Inc</div>
+    <nav class="nav-links">
+      <div class="dropdown">
+        <button class="dropbtn">Services<span class="arrow"></span></button>
+        <div class="dropdown-content">
+          <a href="services.html?category=Acne">Acne</a>
+          <a href="services.html?category=Hydration">Hydration</a>
+          <a href="services.html?category=Combo%20Treatment">Combo Treatment</a>
+          <a href="services.html?category=Anti-Aging">Anti-Aging</a>
+          <a href="services.html?category=Optional%20Add-on%20Treatments">Optional Add-on Treatments</a>
+        </div>
+      </div>
+      <a href="#about">About Us</a>
+      <a href="find-treatment.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- 主内容区 -->
+  <main class="main-content">
+    <!-- 左侧图片 -->
+    <section class="promo-left">
+      <img src="env1.jpg" alt="Beauty Key Environment">
+    </section>
+
+<!-- 右侧服务选择按钮区域 -->
+  <section class="form-right">
+    <h3 class="step-title">Let’s Personalize Your Facial Treatment</h3>
+    <h2>What best describes your skin type?</h2>
+    <div class="option-grid">
+      <div class="option-card" data-type="Dry">
+        <img src="icons/dry.png" alt="Dry">
+        <p>Dry</p>
+      </div>
+      <div class="option-card" data-type="Oily">
+        <img src="icons/oily.png" alt="Oily">
+        <p>Oily</p>
+      </div>
+      <div class="option-card" data-type="Normal">
+        <img src="icons/normal.png" alt="Normal">
+        <p>Normal</p>
+      </div>
+      <div class="option-card" data-type="Sensitive">
+        <img src="icons/sensitive.png" alt="Sensitive">
+        <p>Sensitive</p>
+      </div>
+      <div class="option-card" data-type="Combo">
+        <img src="icons/combo.png" alt="Combo">
+        <p>Combo</p>
+      </div>
+      <div class="option-card" data-type="Not Sure">
+        <img src="icons/not-sure.png" alt="Not Sure">
+        <p>Not Sure</p>
+      </div>
+    </div>
+    <button class="next-button" disabled>Next</button>
+
+    <!-- Why Choose 区域，移出按钮区 -->
+    <div class="choose-section">
+      <ul>
+        <li>👩‍⚕️ Licensed & Experienced Aesthetic Professionals</li>
+        <li>🌿 Safe, Clean, and Relaxing Environment</li>
+        <li>💬 Personalized Skin Consultations</li>
+        <li>📍 Convenient San Francisco Location</li>
+      </ul>
+    </div>
+  </section>
+  </main>
+
+<div class="yelp-trust-section">
+  <div class="trust-title">❤️ Trusted by <strong>Thousands</strong> Happy Clients | Rated <span class="stars">★★★★★</span> on <a href="#">Yelp</a></div>
+  
+  <div class="trust-flexbox">
+    <div class="trust-image">
+       <a href="https://www.yelp.com/biz/beauty-key-san-francisco?osq=Beauty+Key" target="_blank">
+      <img src="yelp-badge.png" alt="Yelp review screenshot">
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<section class="story-header">
+  <img src="city.jpg" alt="Beauty Key Story Image" class="story-image">
+</section>
+<!-- About Us Section -->
+<section class="about-us-section" id="about">
+  <div class="about-us-container">
+    <h2 class="about-us-title">💜 Our Story</h2>
+
+    <div class="about-us-content">
+      <p>Founded in 2018, <strong>Beauty Key</strong> began with a belief: everyone deserves to feel confident and radiant in their skin.</p>
+
+      <p>With years of hands-on experience, our founder Selena opened Beauty Key in San Francisco to create a space that combines expert care with authentic warmth.</p>
+
+      <p>From day one, we've focused on customized, results-oriented treatments—soothing acne, easing aging signs, and offering calm in a fast-paced world.</p>
+
+      <p>More than treatments, we build lasting connections. Over 120 clients trust us, many returning as friends—for care, comfort, and consistency.</p>
+
+      <p class="last-line">✨ Today, Beauty Key continues to grow—still helping every client unlock their natural glow, with <em>expertise, heart, and honesty</em>.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- 快速预约按钮 
+  <section class="booking">
+    <a href="mailto:yaol2@my.smccd.edu" class="button">Email Reservation</a>
+    <a href="tel:4157704675" class="button">Telephone Reservation</a>
+  </section>-->
+
+
+
+
+
+</body>
+</html>
